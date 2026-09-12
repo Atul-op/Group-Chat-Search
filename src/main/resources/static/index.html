@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat Semantic Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-header">
+        Semantic Search
+        <button class="action-btn" onclick="generateData()" id="generateBtn">Init Data</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by meaning... (e.g. 'planning a trip')" onkeypress="handleSearch(event)">
+    </div>
+    <div class="search-results" id="searchResults">
+        <div class="loading">Search results will appear here.</div>
+    </div>
+</div>
+
+<div class="chat-window">
+    <div class="chat-header">Group Chat: "SGSITS Canteen Mafia"</div>
+    <div class="chat-messages" id="chatContainer">
+        <div class="loading" id="chatLoader">Loading 4000+ messages...</div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
